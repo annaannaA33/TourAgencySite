@@ -1,0 +1,97 @@
+.white{
+    background-color: rgba(220, 239, 244, 0.2);
+    padding: 8%;
+    justify-content:end;
+    margin: 0 10%;
+    text-align:left;
+    font-size: 1rem; 
+    font-weight: bold; 
+        
+}
+.white p{
+    font-size: 1rem; 
+}
+
+
+.white:hover{
+    filter: brightness(1.2);
+}
+
+.destinations-grid {
+    padding: 5% 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    column-gap: 1px;
+    column-gap: 5%;
+}
+.destinations-grid img {
+    width: 100%;
+    height: 89%;
+    border-radius: 8px;
+    transition: filter 0.3s ease-in-out; /* Плавное изменение при наведении */
+}
+.destinations-grid img:hover {
+    filter: brightness(1.2); /* Увеличение яркости при наведении */
+}
+.destinations-grid .caption {
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+    color: #d0edf8;
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 8px;
+    padding: 8px;
+    opacity: 0.5;
+    
+    transition: opacity 0.3s ease-in-out; /* Плавное изменение видимости */
+}
+.destinations-grid .caption:hover {
+    opacity: 1; /* Показать надпись при наведении */
+}
+
+.destinations-grid .caption a{
+    direction: none;
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 768px) {
+    .destinations-grid {
+        grid-template-columns: repeat(2, 1fr); /* Переключение на две колонки на мобильных устройствах */
+    }
+}
+
+.destination-page-flex{
+    display: flex;
+    margin: 0 10%;
+}
+
+.italy-image{
+    padding: 4%;
+    width: 600px;
+    height: 300px;
+    
+}
+
+.destination-description{
+    display: flex;
+    flex: 0 1;
+    margin: 0 10%;
+}
+.destination-description p{
+    width: 300px;
+    padding: 4% 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    #Destinations-Gallery {
+        font-size: smaller;
+    }
+}

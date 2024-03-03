@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItalyDestinationPage</title>
+    <link href="./css/header.css" rel="stylesheet" type="text/css">
+    <link href="./css/destinations.css" rel="stylesheet" type="text/css">
+    <link href="./css/footer.css" rel="stylesheet" type="text/css">
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+    <link href="./destinations.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <header class="flex-container">
+
+
+    <div class="nav-element grid-container"> 
+      <div class="nav">
+        <a href="/index.html">Home</a>
+        <a href="/destinations.html">Destinations</a>
+        <a href="#">About</a>
+      </div>
+    </div>
+   
+    <div>  
+
+           
+          
+          <div>
+            <!--form-->
+            <form class="white-font">
+              <div>
+                <label for="destination">Destination</label>
+                <select id="destination">
+                  <option value="Paris">Paris</option>
+                  <option value="Tokyo">Tokyo</option>
+                  <option value="Sydney">Sydney</option>
+                  <option value="San Francisco">San Francisco</option>
+                </select>
+              </div>
+              <div class="form">
+                  <div>
+                      <label for="from">From</label>
+                      <input type="date" name="date" id="date">
+                  </div>
+                  <div>
+                      <label for="to">To</label>
+                      <input type="date" name="dateto" id="dateto">
+                  </div>
+                  <div>
+                    <label for="guests">Guests</label>
+                      <input type="number" id="guests">
+                  </div>
+              </div>
+              <div>
+                <button type="submit">
+                  -&gt;
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+  
+      
+    </header>  
+
+  
+    <main>
+      <div class="destination-page-flex">
+        <!-- Destination image -->
+        
+          <img src="/images/destinations2/edoardo-bortoli-AGjNCNBb3is-unsplash.jpg" alt="Italy Image" class="italy-image">
+        
+        
+        <!-- Destination description -->
+          <div class="destination-description">
+              
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut ligula quis est vehicula lacinia. Nullam auctor, sem sit amet maximus condimentum, ligula turpis egestas nunc, vel euismod lorem lectus eu ligula. Donec nec risus nec lectus auctor ullamcorper. Aenean at ipsum non sem congue fermentum. Nullam in elit nec odio varius bibendum nec eget lacus. Duis ac ultrices quam. Suspendisse potenti. Morbi ut odio et dolor ultrices dapibus. Phasellus non neque vel felis ullamcorper scelerisque. Donec consequat auctor urna, ac lobortis dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec vel elit et eros fringilla vehicula. In hac habitasse platea dictumst. Donec auctor, odio non tincidunt commodo, mauris est mollis felis, at suscipit purus nulla ac felis.</p>
+              <p>Quisque in semper ligula. Curabitur vel erat eu sem mattis varius. Mauris id metus ut turpis scelerisque faucibus. In hac habitasse platea dictumst. Aenean venenatis efficitur erat, nec placerat quam. Sed vitae vehicula arcu. Integer ut odio vel purus hendrerit suscipit. Duis ut gravida enim. Proin aliquet sapien nunc, et egestas neque consequat nec. Nulla non ipsum euismod, lacinia nunc vel, lacinia eros. Mauris nec dui at est posuere condimentum. Nam fermentum quam ut libero pharetra, nec malesuada nulla consectetur.</p>
+              <p>Nulla vel ligula eget tortor pretium varius. Praesent condimentum, eros nec hendrerit venenatis, neque eros fermentum lacus, ac consectetur mauris ipsum nec mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. In rutrum, ipsum ut tincidunt luctus, arcu sapien vestibulum enim, sit amet cursus est justo sit amet nunc. Duis elementum, ligula sed suscipit posuere, ipsum eros dignissim erat, vel consectetur purus libero non risus. Donec ullamcorper, sem at vehicula rutrum, dolor mauris sodales nisi, eget vehicula eros dui et sapien.</p>
+          </div>
+
+      </div>
+  </main>
+
+    <footer>
+           
+        <div class="links-container">
+          <h3>Links</h3>
+          <a href="/index.html">Home</a>
+          <a href="/destinations.html">Destinations</a>
+          <a href="#">About</a>
+          <a href="/contacts.html">Contacts</a>
+        </div>
+        
+        <div>
+          <h3>Newsletter</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+          </p>
+          <form class="email-form">
+            <input type="email" class="email-input" placeholder="add email" required>
+            <button type="submit" class="submit-button">Subscribe</button>
+  
+          </form>
+        </div>
+    </footer>
+</body>
+</html>

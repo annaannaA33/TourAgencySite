@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="./css/header.css" rel="stylesheet" type="text/css">
+    <link href="./css/destinations.css" rel="stylesheet" type="text/css">
+    <link href="./css/footer.css" rel="stylesheet" type="text/css">
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="flex-container">
+        <h1 id="Contact-Us">Contact Us</h1>
+    </header>
+
+    <main>
+        
+        <form>
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit"><a href="/contactFormSuccessPage.html">Submit</a></button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+           
+        <div class="links-container">
+          <h3>Links</h3>
+          <a href="/index.html">Home</a>
+          <a href="/destinations.html">Destinations</a>
+          <a href="#">About</a>
+          <a href="/contacts.html">Contacts</a>
+        </div>
+        
+        <div>
+          <h3>Newsletter</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+          </p>
+          <form class="email-form">
+            <input type="email" class="email-input" placeholder="add email" required>
+            <button type="submit" class="submit-button">Subscribe</button>
+  
+          </form>
+        </div>
+        
+    </footer>
+
+</body>
+</html>
+
+
+
+<!--
+visibility: hidden
+display:none-->
