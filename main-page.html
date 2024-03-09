@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Travel agency: Homepage</title>
+        <meta name="description" content="Travel agency: Homepage" />
+        <meta name="author" content="You" />
+        <link href="./cssstyles/header.css" rel="stylesheet" type="text/css" />
+        <link href="/cssstyles/main.css" rel="stylesheet" type="text/css" />
+        <link href="/cssstyles/footer.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="content-container-md">
+                <nav class="nav">
+                    <!-- Search -->
+                    <div class="search-icon">
+                        <img src="/icons/search-white.svg" alt="Search icon" />
+                    </div>
+                    <form method="get" class="search-form">
+                        <input
+                            type="text"
+                            placeholder="Search"
+                            class="search-form"
+                        />
+                    </form>
+
+                    <!--logo icon-->
+                    <div class="logo">
+                        <img src="/icons/globe-white.svg" alt="logo icon" />
+                    </div>
+
+                    <!-- Menu icon -->
+                    <div>
+                        <div class="menu">
+                            <img
+                                src="/icons/three-bars-white.svg"
+                                alt="menu icon"
+                            />
+                        </div>
+
+                        <div class="desctop-nav-links">
+                            <a href="./destinations.html">Destinations</a>
+                            <a href="./contacts.html">Contacts</a>
+                            <a href="/main-page.html">Home</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- text and form -->
+                <div class="text-and-form">
+                    <h3>Year long travel</h3>
+                    <h1>
+                        Book your<br />
+                        next<br />
+                        destination
+                    </h1>
+
+                    <form class="container-fluid">
+                        <div class="select-destination">
+                            <label>Destination</label>
+                            <select id="field-destination">
+                                <option value="" selected disabled>
+                                    Select destination
+                                </option>
+                                <option value="paris">Paris</option>
+                                <option value="tokyo">Tokyo</option>
+                                <option value="sydney">Sydney</option>
+                                <option value="san-francisco">
+                                    San Francisco
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="from">
+                            <label>From</label>
+                            <input type="date" />
+                        </div>
+
+                        <div class="to">
+                            <label>To</label>
+                            <input type="date" />
+                        </div>
+
+                        <div class="guests">
+                            <label>Guests</label>
+                            <input
+                                type="number"
+                                value="2"
+                                placeholder="number"
+                            />
+                        </div>
+
+                        <div class="submit">
+                            <button type="submit">
+                                <img src="/icons/arrow-right.svg" alt="arrow" />
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!--text-->
+            <section class="desktop-version">
+                <h2>Destinations</h2>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, adventure travel mountains,
+                        beach resorts and cultural experiences await. Pack your
+                        bags and get ready to
+                        <span>explore the world</span>! From bustling cities to
+                        tranquil countryside getaways, there's a destination for
+                        every type of traveler.
+                    </p>
+                    <p>
+                        If you're a culture lover, the historic cities of London
+                        and Edinburgh should be at the top of your list. Walk
+                        the streets of London's West End, marvel at the
+                        architecture of Big Ben and Buckingham Palace, and take
+                        in a show at the Globe Theatre. In Edinburgh, visit the
+                        Royal Mile, explore the castle, and sample the local
+                        fare at the city's world-famous restaurants.
+                    </p>
+                    <p>
+                        For those seeking a bit of relaxation,
+                        <span>explore the world</span>
+                        and resorts of the English countryside. Indulge in a
+                        luxurious massage or take a dip in a hot spring. If
+                        you're looking for something a bit more active, strap on
+                        your hiking boots and tackle the rugged trails of the
+                        coastal cliffs.
+                    </p>
+                </div>
+            </section>
+
+            <div class="image-content desktop-version">
+                <!--images-->
+                <div class="cities-container">
+                    <div class="city-container">
+                        <img
+                            src="/images/destinations/paris.jpg"
+                            alt="view of the Eiffel Tower from below"
+                        />
+                        <div class="country-city-name-container">
+                            <strong class="city">Paris</strong>
+                            <div class="country">France</div>
+                        </div>
+                    </div>
+
+                    <div class="city-container">
+                        <img
+                            src="/images/destinations/san-francisco.jpg"
+                            alt="view of the bridge in san francisco"
+                        />
+                        <div class="country-city-name-container">
+                            <strong class="city">San Francisco</strong>
+                            <div class="country">United States</div>
+                        </div>
+                    </div>
+
+                    <div class="city-container">
+                        <img
+                            src="/images/destinations/sydney.jpg"
+                            alt="view of a building in Sydney"
+                        />
+                        <div class="country-city-name-container">
+                            <strong class="city">Sydney</strong>
+                            <div class="country">Australia</div>
+                        </div>
+                    </div>
+
+                    <div class="city-container">
+                        <img
+                            src="/images/destinations/tokyo.jpg"
+                            alt="blossoms near the palace"
+                        />
+                        <div class="country-city-name-container">
+                            <strong class="city">Tokio</strong>
+                            <div class="country">Japan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-size">
+                <nav>
+                    <h3>Links</h3>
+                    <a href="/main-page.html">Home</a>
+                    <a href="/destinations.html">Destinations</a>
+                    <a href="#">About</a>
+                    <a href="/contacts.html">Contacts</a>
+                </nav>
+
+                <div>
+                    <h3>Newsletter</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        <br />
+                        elit. Nulla euismod, nisl nec tincidunt dapibus,<br />
+                        magna libero fermentum augu.
+                    </p>
+                    <form class="email-form">
+                        <!--newsletter form-->
+                        <input
+                            type="email"
+                            class="email-input"
+                            placeholder="add email"
+                            required
+                        />
+                        <button type="submit" class="email-submit-button">
+                            Subscribe
+                            <img src="/icons/arrow-right-white.svg" alt="" />
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
