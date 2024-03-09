@@ -1,0 +1,40 @@
+footer {
+    background-color: goldenrod;
+}
+
+footer nav a {
+    display: block;
+    color: black;
+    transition: all 0.3s;
+}
+
+footer nav a:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    color: #333;
+}
+
+.email-submit-button {
+    background-color: darkgreen;
+    color: white;
+    border-radius: 0 8px 8px 0;
+    padding-bottom: 2px;
+    font-size: 16px;
+}
+
+.email-submit-button::after {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.email-form .email-input {
+    padding-bottom: 1px;
+    border-radius: 8px 0 0 8px;
+}
+.email-form {
+    display: flex;
+    justify-content: stretch;
+}
+.footer-size {
+    padding: 20px 0 30px 0px;
+}
