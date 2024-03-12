@@ -21,10 +21,11 @@ span {
 .city-container img {
     width: 100%;
     object-fit: cover;
-    max-height: 240px;
-    border-radius: 8px;
+    max-height: 450px;
+
     transition: filter 0.3s ease-in-out;
 }
+
 .city-container img:hover {
     filter: brightness(1.2);
 }
@@ -46,4 +47,45 @@ strong {
 .successfully-sent {
     padding: 10px 5px;
     font-size: large;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    align-content: center;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.form-group button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: darkgreen;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.form-group button[type="submit"]:hover {
+    background-color: #ffc107;
 }

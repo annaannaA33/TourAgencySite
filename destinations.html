@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Destinations Gallery Page</title>
 
-        <link href="./css/destinations.css" rel="stylesheet" type="text/css" />
+        <link
+            href="./cssstyles/destinations.css"
+            rel="stylesheet"
+            type="text/css"
+        />
 
         <link href="./destinations.css" rel="stylesheet" type="text/css" />
         <link href="./cssstyles/header.css" rel="stylesheet" type="text/css" />
@@ -17,37 +21,52 @@
         />
     </head>
     <body>
-        <header
-            class="destinations-flex-container other-pages desktop-version-foter"
-        >
-            <nav class="nav-other">
-                <div class="home-link">
-                    <a href="/main-page.html">Home</a>
-                </div>
+        <header class="other-pages">
+            <div class="content-container-md">
+                <nav class="nav">
+                    <!-- Search -->
 
-                <!--logo icon-->
-                <div>
-                    <img src="/icons/globe-white.svg" alt="logo icon" />
-                </div>
-
-                <!-- Menu icon -->
-                <div>
-                    <div id="menu">
-                        <img
-                            src="/icons/three-bars-white.svg"
-                            alt="menu icon"
+                    <div class="search-icon">
+                        <img src="/icons/search-white.svg" alt="Search icon" />
+                    </div>
+                    <form method="get" class="search-form">
+                        <input
+                            type="text"
+                            placeholder="Search"
+                            class="search-form"
                         />
+                    </form>
+
+                    <!--logo icon-->
+                    <div class="logo">
+                        <a href="./main-page.html"
+                            ><img src="/icons/globe-white.svg" alt="logo icon"
+                        /></a>
                     </div>
 
-                    <div class="desctop-nav-links">
-                        <a href="./destinations.html">Destinations</a>
-                        <a href="./contacts.html">Contacts</a>
+                    <!-- Menu icon -->
+                    <div>
+                        <div class="menu">
+                            <img
+                                src="/icons/three-bars-white.svg"
+                                alt="menu icon"
+                            />
+                        </div>
+
+                        <div class="desctop-nav-links">
+                            <a href="./destinations.html">Destinations</a>
+                            <a href="./contacts.html">Contacts</a>
+                        </div>
                     </div>
+                </nav>
+
+                <!-- text and form -->
+
+                <div class="text-and-form">
+                    <h1>Destinations Gallery Page</h1>
                 </div>
-            </nav>
-            <div class="header-description">
-                <h1>Destinations Gallery Page</h1>
-                <p id="Destinations-Gallery">
+
+                <p id="destinations-gallery">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Nulla euismod, nisl nec tincidunt dapibus, magna libero
                     fermentum augu
@@ -57,12 +76,14 @@
         <main>
             <div class="destinations-grid">
                 <div>
-                    <img
-                        src="/images/3/andre-portolesi-9XhOWoUTvqQ-unsplash.jpg"
-                        alt="Italy"
-                    />
+                    <a href="/italy.html"
+                        ><img
+                            src="/images/3/andre-portolesi-9XhOWoUTvqQ-unsplash.jpg"
+                            alt="Italy"
+                    /></a>
+
                     <div class="caption">
-                        <a href="/destinationPage.html">Italy</a>
+                        <a href="/italy.html">Italy</a>
                     </div>
                 </div>
 
@@ -156,7 +177,7 @@
             </div>
         </main>
         <footer>
-            <div class="desktop-version-foter">
+            <div class="footer-size">
                 <nav>
                     <h3>Links</h3>
                     <a href="/main-page.html">Home</a>
@@ -177,7 +198,7 @@
                         <input
                             type="email"
                             class="email-input"
-                            placeholder="add email"
+                            placeholder="Email"
                             required
                         />
                         <button type="submit" class="email-submit-button">

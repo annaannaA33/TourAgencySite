@@ -1,17 +1,20 @@
 footer {
-    background-color: goldenrod;
+    background-color: #ffc107;
 }
 
-footer nav a {
+footer nav a,
+main p span .nav-in-text a {
     display: block;
     color: black;
     transition: all 0.3s;
+    text-decoration: underline;
 }
 
-footer nav a:hover {
+footer nav a:hover,
+.nav-in-text a {
     text-decoration: none;
     transform: scale(1.1);
-    color: #333;
+    color: #000000;
 }
 
 .email-submit-button {

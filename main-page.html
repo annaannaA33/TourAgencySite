@@ -9,6 +9,10 @@
         <link href="./cssstyles/header.css" rel="stylesheet" type="text/css" />
         <link href="/cssstyles/main.css" rel="stylesheet" type="text/css" />
         <link href="/cssstyles/footer.css" rel="stylesheet" type="text/css" />
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
     </head>
 
     <body>
@@ -16,6 +20,7 @@
             <div class="content-container-md">
                 <nav class="nav">
                     <!-- Search -->
+
                     <div class="search-icon">
                         <img src="/icons/search-white.svg" alt="Search icon" />
                     </div>
@@ -29,7 +34,9 @@
 
                     <!--logo icon-->
                     <div class="logo">
-                        <img src="/icons/globe-white.svg" alt="logo icon" />
+                        <a href="./main-page.html"
+                            ><img src="/icons/globe-white.svg" alt="logo icon"
+                        /></a>
                     </div>
 
                     <!-- Menu icon -->
@@ -44,17 +51,15 @@
                         <div class="desctop-nav-links">
                             <a href="./destinations.html">Destinations</a>
                             <a href="./contacts.html">Contacts</a>
-                            <a href="/main-page.html">Home</a>
                         </div>
                     </div>
                 </nav>
 
                 <!-- text and form -->
                 <div class="text-and-form">
-                    <h3>Year long travel</h3>
+                    <h3>YEAR LONG TRAVEL</h3>
                     <h1>
-                        Book your<br />
-                        next<br />
+                        Book your next<br />
                         destination
                     </h1>
 
@@ -107,7 +112,7 @@
             <!--text-->
             <section class="desktop-version">
                 <h2>Destinations</h2>
-                <div>
+                <div class="text">
                     <p>
                         Lorem ipsum dolor sit amet, adventure travel mountains,
                         beach resorts and cultural experiences await. Pack your
@@ -140,7 +145,7 @@
             <div class="image-content desktop-version">
                 <!--images-->
                 <div class="cities-container">
-                    <div class="city-container">
+                    <div class="city-container border-radius-left">
                         <img
                             src="/images/destinations/paris.jpg"
                             alt="view of the Eiffel Tower from below"
@@ -173,7 +178,7 @@
                         </div>
                     </div>
 
-                    <div class="city-container">
+                    <div class="city-container border-radius-raight">
                         <img
                             src="/images/destinations/tokyo.jpg"
                             alt="blossoms near the palace"
@@ -200,17 +205,16 @@
                 <div>
                     <h3>Newsletter</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        <br />
-                        elit. Nulla euismod, nisl nec tincidunt dapibus,<br />
-                        magna libero fermentum augu.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nulla euismod, nisl nec tincidunt dapibus, magna libero
+                        fermentum augu.
                     </p>
                     <form class="email-form">
                         <!--newsletter form-->
                         <input
                             type="email"
                             class="email-input"
-                            placeholder="add email"
+                            placeholder="Email"
                             required
                         />
                         <button type="submit" class="email-submit-button">

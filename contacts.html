@@ -4,10 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Contact Form</title>
-        <link href="./css/header.css" rel="stylesheet" type="text/css" />
-        <link href="./css/destinations.css" rel="stylesheet" type="text/css" />
-        <link href="../cssstyles/footer.css" rel="stylesheet" type="text/css" />
-        <link href="./css/base.css" rel="stylesheet" type="text/css" />
+        <link href="./cssstyles/footer.css" rel="stylesheet" type="text/css" />
+        <link href="./cssstyles/main.css" rel="stylesheet" type="text/css" />
+
         <link href="./cssstyles/header.css" rel="stylesheet" type="text/css" />
         <link
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,37 +14,42 @@
         />
     </head>
     <body>
-        <header
-            class="destinations-flex-container other-pages desktop-version-foter"
-        >
-            <nav class="nav-other">
-                <div class="home-link">
-                    <a href="/main-page.html">Home</a>
-                </div>
-
-                <!--logo icon-->
-                <div>
-                    <img src="/icons/globe-white.svg" alt="logo icon" />
-                </div>
-
-                <!-- Menu icon -->
-                <div>
-                    <div id="menu">
-                        <img
-                            src="/icons/three-bars-white.svg"
-                            alt="menu icon"
-                        />
-                    </div>
-
+        <header class="other-pages">
+            <div class="content-container-md">
+                <nav class="nav">
                     <div class="desctop-nav-links">
-                        <a href="./destinations.html">Destinations</a>
                         <a href="./contacts.html">Contacts</a>
                     </div>
+
+                    <!--logo icon-->
+                    <div class="logo">
+                        <a href="./main-page.html"
+                            ><img src="/icons/globe-white.svg" alt="logo icon"
+                        /></a>
+                    </div>
+
+                    <!-- Menu icon -->
+                    <div>
+                        <div class="menu">
+                            <img
+                                src="/icons/three-bars-white.svg"
+                                alt="menu icon"
+                            />
+                        </div>
+
+                        <div class="desctop-nav-links">
+                            <a href="./destinations.html">Destinations</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- text and form -->
+
+                <div class="text-and-form">
+                    <h1>Contact us</h1>
                 </div>
-            </nav>
-            <div class="header-description">
-                <h1>Contacts</h1>
-                <p id="Destinations-Gallery">
+
+                <p id="destinations-gallery">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Nulla euismod, nisl nec tincidunt dapibus, magna libero
                     fermentum augu
@@ -87,7 +91,7 @@
         </main>
 
         <footer>
-            <div>
+            <div class="footer-size">
                 <nav>
                     <h3>Links</h3>
                     <a href="/main-page.html">Home</a>
@@ -108,7 +112,7 @@
                         <input
                             type="email"
                             class="email-input"
-                            placeholder="add email"
+                            placeholder="Email"
                             required
                         />
                         <button type="submit" class="email-submit-button">
