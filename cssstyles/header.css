@@ -2,18 +2,28 @@ header {
     background-image: url(/images/header-mob.jpg);
 
     height: 96vh;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 5%;
     background-size: cover;
 }
+.other-pages {
+    background-image: url(/images/header-mob.jpg);
+
+    height: 50vh;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
 @media (min-width: 768px) {
     header {
         background-image: url(/images/header.jpg);
+
         height: 100vh;
-        color: aliceblue;
+        color: rgb(255, 255, 255);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -21,15 +31,6 @@ header {
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
-}
-
-.other-pages {
-    background-image: url(/images/header2.jpg);
-
-    height: 50vh;
-    color: aliceblue;
-    flex-direction: column;
-    padding-bottom: 20px;
 }
 
 .nav {
@@ -128,11 +129,12 @@ header {
     left: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: 0cap;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .search-form::placeholder {
     color: white;
+    background-color: rgba(0, 0, 0, 0);
 }
 .search-form input {
     width: 2fr;
@@ -154,6 +156,8 @@ header {
 .destination-page-content h1 {
     font: size 30px;
     font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    color: white;
 }
 
 .destinations-flex-container p {
@@ -174,12 +178,14 @@ header {
 
     margin: 20px 0 20px 0;
     color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .content-container-md .text-and-form h1,
 .content-container-main .text-and-form h1 {
     font-size: 3.2rem;
     font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .pading {
@@ -197,7 +203,9 @@ body {
     .destinations-flex-container .nav-other #menu {
         display: none;
     }
-
+    #some-text {
+        font-size: 19px;
+    }
     #thank-you {
         padding-top: 200px;
         padding-left: 10px;
@@ -211,9 +219,9 @@ body {
     }
 
     .other-pages {
-        background-image: url(/images/header2.jpg);
+        background-image: url(/images/header-short.jpg);
         height: 50vh;
-        color: aliceblue;
+        color: white;
         flex-direction: column;
         padding-bottom: 20px;
     }
@@ -221,7 +229,8 @@ body {
     .desctop-nav-links a,
     .destinations-flex-container .nav-other .home-link a,
     .destinations-flex-container .nav-other .desctop-nav-links a {
-        color: rgb(248, 248, 248);
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 
         transition: color 0.3s;
     }
@@ -229,12 +238,13 @@ body {
         transform: scale(1.1);
         color: #333;
         text-decoration: none;
-        color: rgb(248, 248, 248);
+        color: rgb(255, 255, 255);
         transition: all 0.3s;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     }
     .desctop-nav-links {
         display: flex;
-        gap: 5px;
+        gap: 20px;
 
         align-items: end;
     }
@@ -256,9 +266,10 @@ body {
     .content-container-main h3 {
         font-size: 15px;
         font-weight: bold;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     }
 
-    .desktop-version-foter {
+    .content-container {
         padding: 80px 10px 0px 10px;
     }
 
@@ -309,12 +320,24 @@ body {
     }
     #Destinations-Gallery {
         padding-top: 5rem;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     }
     .footer-size div {
         display: flex;
         flex-direction: column;
         align-items: baseline;
         width: 550px;
+    }
+
+    strong {
+        font-style: italic;
+        font-size: 20px;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    }
+    .city-container .country {
+        color: rgb(225, 222, 222);
+        font-size: 20px;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     }
 
     .email-form .email-input {
@@ -364,6 +387,7 @@ body {
         font-size: 10px;
         font-weight: bold;
         padding-top: 95%;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     }
     .cities-container {
         display: grid;
@@ -388,6 +412,26 @@ body {
     footer h3 {
         padding-bottom: 1rem;
     }
+    .content-container-main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: space-between;
+        padding: 0 20px 50px 20px;
+    }
+
+    strong {
+        font-style: italic;
+        font-size: 10px;
+    }
+    .city-container .country {
+        color: rgb(225, 222, 222);
+        font-size: 10px;
+    }
 
     footer nav {
         padding-top: 1rem;
@@ -400,6 +444,10 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
     }
     .text-and-form .container-fluid {
         padding-right: 0;
@@ -410,7 +458,9 @@ body {
         display: flex;
         justify-content: center;
         align-items: self-start;
-        padding-right: 120px;
+        position: absolute;
+
+        left: 50%;
     }
     .content-container-md .text-and-form h3 {
         padding: top 10%;
@@ -433,12 +483,16 @@ body {
     .email-form .email-input {
         width: 100%;
     }
+    #some-text {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     #Destinations-Gallery {
         font-size: smaller;
         padding-top: 80%;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     }
 }
 

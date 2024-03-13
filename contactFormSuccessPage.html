@@ -13,17 +13,26 @@
             rel="stylesheet"
         />
     </head>
-    <body desktop-version-foter>
+    <body>
         <header class="other-pages">
             <div class="content-container-md">
                 <nav class="nav">
-                    <div class="desctop-nav-links">
-                        <a href="./contacts.html">Contacts</a>
+                    <!-- Search -->
+
+                    <div class="search-icon">
+                        <img src="/icons/search-white.svg" alt="Search icon" />
                     </div>
+                    <form method="get" class="search-form">
+                        <input
+                            type="text"
+                            placeholder="Search"
+                            class="search-form"
+                        />
+                    </form>
 
                     <!--logo icon-->
                     <div class="logo">
-                        <a href="./main-page.html"
+                        <a href="/index.html"
                             ><img src="/icons/globe-white.svg" alt="logo icon"
                         /></a>
                     </div>
@@ -39,6 +48,7 @@
 
                         <div class="desctop-nav-links">
                             <a href="./destinations.html">Destinations</a>
+                            <a href="./contacts.html">Contacts</a>
                         </div>
                     </div>
                 </nav>
@@ -48,30 +58,21 @@
                 <div class="text-and-form">
                     <h1>Contact us</h1>
                 </div>
-
-                <p id="destinations-gallery">
-                    The feedback form has been successfully submitted. Please
-                    expect a call from our managers soon
-                </p>
             </div>
         </header>
-        <main>
+        <main class="nav-in-text">
             <p>
                 Your message has been successfully sent. We will get back to you
                 as soon as possible
-                <span class="nav-in-text"
-                    ><a href="/destinations.html">back to galery</a></span
+                <span><a href="/destinations.html">back to galery</a></span
                 >.
             </p>
             <p>
                 Lorem ipsum dolor sit amet, adventure travel mountains, beach
                 resorts and cultural experiences await.
-                <span class="nav-in-text"
-                    ><a href="/contacts.html">contacts </a></span
-                >Pack your bags and get ready to explore the world<span
-                    class="nav-in-text"
-                    nav-in-text
-                    ><a href="/main-page.html"> home page</a></span
+                <span><a href="/contacts.html">contacts </a></span>Pack your
+                bags and get ready to explore the world<span
+                    ><a href="/index.html"> home page</a></span
                 >!
             </p>
         </main>
@@ -80,7 +81,7 @@
             <div class="footer-size">
                 <nav>
                     <h3>Links</h3>
-                    <a href="/main-page.html">Home</a>
+                    <a href="/index.html">Home</a>
                     <a href="/destinations.html">Destinations</a>
                     <a href="#">About</a>
                     <a href="/contacts.html">Contacts</a>
