@@ -1,0 +1,7 @@
+# Ignore Bootstrap CSS and JS files
+/bootstrap/css/
+/bootstrap/js/
+
+# Ignore Bootstrap source files
+/bootstrap/scss/
+/bootstrap/js/src/
